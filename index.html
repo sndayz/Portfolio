@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio : Yuri Olivieri</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script defer src="./resources/javascript/app.js"></script>
+    <script src="https://kit.fontawesome.com/3d706696cc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header> <!--it's okay to put the header inside the main section if 
+            it's used to navigate the content of the main, should be 
+            put outside if it's used to navigate entire website(multipage)-->
+
+            <section class="hero-section hidden">
+                <p>Hello, my name is...</p>
+                <h1>Yuri Olivieri</h1>
+                <h2>Web Developer</h2>
+
+                <div class="skill-section">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                    <i class="fa-brands fa-js" title="Javascript"></i>
+                </div>
+            </section>
+
+
+            <nav>
+                <ul class="nav-list hidden">
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#studies">STUDIES</a></li>
+                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#contacts">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="about-section hidden" id="about">
+            <h3>ABOUT ME</h3>
+
+            <p>Hi, I'm Yuri Olivieri, a passionate web developer dedicated to crafting 
+                visually appealing and user-friendly websites. With a growing expertise in 
+                front-end technologies, I love turning creative ideas into functional and 
+                engaging web experiences. I'm excited to bring innovative solutions to life 
+                and constantly expand my skills in the ever-evolving world of web development.</p>
+        </section>
+
+        <div class="visual-divider hidden">
+            <img src="https://i.pinimg.com/736x/bd/a1/ba/bda1ba023c4b0df35b50c23b528da357.jpg" alt="">
+        </div>
+
+        <section class="studies-section hidden" id="studies">
+            <h3>STUDIES</h3>
+            <h4>Codecademy: Front-End Engineering (Completed 2024)</h4>
+
+            <p>As part of my journey to becoming a skilled web developer, I completed the Codecademy 
+                Front-End Engineering course, which provided me with a solid foundation in the core technologies
+                of web development. This course covered a wide range of topics including HTML, CSS, JavaScript,
+                and modern web design practices. Through hands-on projects, I learned how to build responsive and
+                visually appealing websites, ensuring accessibility and performance are top priorities. The course 
+                not only honed my technical skills but also fueled my passion for creating seamless user experiences, 
+                empowering me to tackle more advanced projects in web development.</p>
+        </section>
+
+        <section class="projects-section hidden" id="projects">
+            <h3>PROJECTS</h3>
+            <div class="images-container">
+                <a href="#"><img class="hidden" src="/resources/images/Liquid Tattoos_page-0001.jpg" alt=""></a>
+                <a href="#"><img class="hidden" src="/resources/images/Tea Cosy_page-0001.jpg" alt=""></a>
+                <a href="#"><img class="hidden" src="/resources/images/Number Guesser_page-0001.jpg" alt=""></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacts" class="hidden">
+        <div class="contact-info">
+            <h3>CONTACTS</h3>
+            <p><span>Email: </span>yuriolivieri2000@gmail.com</p>
+            <div class="socials">
+                <span>Socials: </span>
+                <i class="fa-brands fa-instagram" title="Instagram"></i>
+                <i class="fa-brands fa-facebook" title="Facebook"></i>
+                <i class="fa-brands fa-linkedin" title="Linkedin"></i>
+            </div>
+        </div>
+
+        
+        <form action="#" method="post">
+            <h4>Contact Me!</h4>
+            <div class="form-group">
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name" placeholder="First Name" required pattern="^[A-Za-z0-9 ]+$" title="Must not containe special characters">
+                <p class="input-hint" aria-live="polite">Must not contain special characters</p> <!--aria live tells screen reader to read out error message after user finished input without interrupting them immidiately-->
+            </div>
+            <div class="form-group">
+                <label for="surname">Last Name</label>
+                <input type="text" name="surname" placeholder="Last Name" required pattern="^[A-Za-z0-9 ]+$" title="Must not containe special characters">
+                <p class="input-hint" aria-live="polite">Must not contain special characters</p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required> <!--type=email has built in regex for validation-->
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    
+        
+    </footer>
+
+    
+</body>
+</html>
